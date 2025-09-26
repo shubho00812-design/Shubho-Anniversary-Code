@@ -18,6 +18,11 @@ export default function AnniversaryApp() {
 
   return (
     <div className="relative min-h-screen bg-gradient-to-br from-indigo-950 via-black to-purple-950 overflow-hidden">
+      
+      {/* CUSTOM MUSIC INTEGRATION - You must rename your song to bg_music.mp3 and place it in the public folder. */}
+      <audio autoPlay loop muted>
+          <source src="/bg_music.mp3" type="audio/mp3" />
+      </audio>
 
       <AnimatePresence mode="wait">
         {currentScreen === "loader" && <LoaderScreen key="loader" onComplete={goToIntro} />}
@@ -36,6 +41,7 @@ export default function AnniversaryApp() {
           delay: 1,
         }}
         className="fixed bottom-4 right-4 text-[13px] text-white/40 pointer-events-none z-50 font-light">
+        @shubho-code
       </motion.div>
     </div>
   )
