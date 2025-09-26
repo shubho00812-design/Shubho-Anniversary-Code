@@ -4,8 +4,7 @@ import ScreenContainer from "../ScreenContainer"
 import Image from "next/image"
 
 // Set the start date for the calculation (November 1, 2024 is used as a placeholder date in November)
-const startDate = new Date("November 01, 2024 00:00:00").getTime()
-
+const startDate = new Date("November 26, 2024 00:00:00").getTime()
 const calculateTimePassed = () => {
   const now = new Date().getTime()
   const distance = now - startDate
